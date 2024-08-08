@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-item .nav-link{
+
+    transition: 0.5s;
+
+}
+
+.nav-item:hover .nav-link{
+    color: #1fa366 !important;
+}
+.hero{
+    background-image: url(../images/heroBackground.png);
+    height: fit-content;
+    background-repeat: no-repeat;
+}
+.heroInput:focus{
+    outline: none;
+}
+.servCard , .servCard .num{
+    transition: 0.5s;
+}
+
+.servCard:hover{
+    background-color: #1fa366;
+    color: white !important;
+}
+.servCard:hover .num{
+    color: white !important;
+}
+.servCard{
+    height: 160px;
+    box-shadow: 5px 5px 5px rgba(176, 176, 176, 0.251);
+    border-radius: 20px;
+    background-color: white;
+    min-width: 290px;
+}
+.greenCourse{
+    background-color: #1fa3652d;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.greenCourse p , .greenCourse i , .grayCourse p , .grayCourse i , .yellowCourse p , .yellowCourse i , .redCourse p , .redCourse i{
+    transition: 0.4s;
+}
+.greenCourse:hover{
+    background-color: #1fa366;
+}
+.greenCourse:hover p , .greenCourse:hover i ,.grayCourse:hover p , .grayCourse:hover i ,.yellowCourse:hover p , .yellowCourse:hover i , .redCourse:hover p , .redCourse:hover i  {
+    color: white !important;
+}
+.redCourse{
+    background-color: #dc354619;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.redCourse:hover{
+    background-color: #dc3545;
+}
+
+
+.grayCourse{
+    background-color: lightgray;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.grayCourse:hover{
+    background-color: gray;
+}
+
+.yellowCourse{
+    background-color: rgba(255, 217, 0, 0.221);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.yellowCourse:hover{
+    background-color: gold;
+}
+
+.courses .text a{
+    transition: 0.4s;
+}
+.courses .text a:hover{
+    color: #1fa366 !important;
+}
+
+
+.testimonial{
+    background-color: rgba(67, 234, 156, 0.139);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.card-list .card-item{
+    width: 400px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.swiper-pagination-bullet-active{
+    background-color: #1fa366;
+}
+
+.teacherCard .teacherImage li{
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: 0.8s;
+}
+
+.teacherCard:hover .teacherImage img{
+    transform: scale(1.1);
+}
+.teacherImage img{
+    transition: 0.5s;
+}
+.teacherImage{
+    overflow: hidden;
+}
+.teacherCard:hover .teacherImage li{
+    transform: rotate3d(0, 1, 0, 0deg);
+}
+
+.subscribe{
+    background-color: rgba(255, 174, 0, 0.221);
+    height: 60vh;
+}
+
+footer ul li:hover a{
+    color: #29c37b !important;
+}
+footer .logoAndSocials ul li i{
+    transition: 0.5s;
+}
+
+footer .logoAndSocials ul li:hover i{
+    color: #29c37b !important;
+}
+
+
+.loader, .loader:before, .loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    animation-fill-mode: both;
+    animation: bblFadInOut 1.8s infinite ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+  .loader {
+    color: #1fa366;
+    font-size: 7px;
+    position: relative;
+    text-indent: -9999em;
+    transform: translateZ(0);
+    animation-delay: -0.16s;
+  }
+  .loader:before,
+  .loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+  .loader:before {
+    left: -3.5em;
+    animation-delay: -0.32s;
+  }
+  .loader:after {
+    left: 3.5em;
+  }
+  
+  @keyframes bblFadInOut {
+    0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
+    40% { box-shadow: 0 2.5em 0 0 }
+  }
+      
+
+@media (max-width: 600px) {
+    .heroTitle{
+        font-size: 40px !important;
+        padding-top: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    /* p{
+        color: aqua;
+    } */
+    .heroTitle{
+        font-size: 50px !important;
+        padding-top: 20px;
+    }
+    .servCardRow{
+        top: 0 !important;
+        padding-top: 50px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    /* p{
+        color: orangered;
+    } */
+    .heroTitle{
+        font-size: 50px !important;
+        padding-top: 20px;
+    }
+    .servCardRow{
+        top: 0 !important;
+        padding-top: 50px;
+    }
+
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1248px) {
+    /* p{
+        color: rgb(202, 247, 111);
+    } */
+    .heroTitle{
+        font-size: 50px !important;
+        padding-top: 20px;
+    }
+    .servCardRow{
+        top: 0 !important;
+        padding-top: 50px;
+    }
+
+}
+
+

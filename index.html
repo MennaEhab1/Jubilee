@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Jubliee</title>
+</head>
+<body onload="appear()">
+     <div class="load position-fixed bg-white" style="height: 100%; width: 100%; z-index: 500;">
+        <span class="loader" style="z-index: 1000;"></span>
+
+     </div>
+    
+    <header>
+        <div class="topAlert bg-danger text-center text-white ">
+            <p class="py-3">Get your first course at 50% Discount. Offer lasts for the first 50 students only. <a class="text-white" href="">Register now</a></p>
+        </div>
+        <nav class="navbar bg navbar-expand-lg pb-4  bg-white">
+            <div class="container-fluid px-5">
+                
+                <img src="images/logo.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse fw-bolder text-uppercase" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll gap-4 mx-auto" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" style="color: #1fa366;" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">introduction <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">cart <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">wishlist <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">checkout <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">priceplan <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">contact <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">faqs <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">account <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">thankyou <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">error 404 <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">styles <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">About us <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    courses
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">course <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">courses detail <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Events
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">Event <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">Events detail <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    blog
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">blog <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">single post <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    shop
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">shop <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                        <li class="py-1"><a class="dropdown-item fw-bold" href="#">single product <span class="bg-danger text-white rounded-3 px-2 pb-1" style="font-size: 13px;">pro</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black" href="#">Get Pro</a>
+                  </li>
+                </ul>
+                
+              </div>
+              <div class="social fs-5">
+                <i class="bi bi-person-circle me-2"></i>
+                <i class="bi bi-heart me-2"></i>
+                <i class="bi bi-bag me-2"></i>
+                <i class="bi bi-search me-2"></i>
+            </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="container">
+                <div class="row overflow-hidden">
+                    <div class="col-lg-6 col-md-6 col-sm-12 align-content-center">
+                        <p class="heroTitle text-uppercase" style="font-size: 80px;" >
+                            Master Your Skills Online
+                        </p>
+                        <p class="fs-5">
+                            Online Courses Taught by Industry Titans!
+                        </p>
+                        <div class="searchBar d-flex">
+                            <input type="text" placeholder="What are you trying to learn?" class="heroInput py-3 px-3 w-100 border-0 rounded-4">
+                            <button type="button" class="btn btn-success rounded-4  position-relative" style="left: -55px; top: 5px; height: 45px; width: 50px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                        <img src="images/billboard-img.png" style="max-width: 100%; " alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <div class="services">
+            <div class="container">
+                <div class="row gap-5 servCardRow position-relative justify-content-center" style="top: -90px;">
+                    <div class="col-sm-12 col-lg-2 col-md-2  servCard d-flex flex-column justify-content-center align-items-center" style="line-height: 0.8;">
+                        <p class=" num fs-1 fw-bolder text-danger">100+</p>
+                        <p class="fs-6 fw-bold text-uppercase">instructors</p>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 col-md-2 servCard d-flex flex-column justify-content-center align-items-center" style="line-height: 0.8;">
+                        <p class=" num fs-1 fw-bolder text-danger">500+</p>
+                        <p class="fs-6 fw-bold text-uppercase">courses</p>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 col-md-2 servCard d-flex flex-column justify-content-center align-items-center" style="line-height: 0.8;">
+                        <p class=" num fs-1 fw-bolder text-danger">FREE</p>
+                        <p class="fs-6 fw-bold text-uppercase">certifications</p>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-2 col-md-2 servCard d-flex flex-column justify-content-center align-items-center" style="line-height: 0.8;">
+                        <p class=" num fs-1 fw-bolder text-danger">2,000+</p>
+                        <p class="fs-6 fw-bold text-uppercase">happy members</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="about py-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center mt-4 gap-3">
+                    <div class="col-lg-5 text-center col-md-5 col-sm-12">
+                        <img src="images/download.jpg" style="border-radius: 50%; width: 85%;" alt="">
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <p class="text-danger">
+                            Learn more about us
+                        </p>
+                        <h1>
+                            About Us
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem <br> molestiae nam commodi dolore vitae? Numquam minima cum asperiores deleniti possimus provident, officia itaque esse eius, delectus incidunt laudantium adipisci laboriosam!
+                        </p>
+                        <p>
+                            <ul>
+                                <li class="pb-3 d-flex gap-3">
+                                    <i class="bi bi-check-circle-fill text-danger fs-5"></i>
+                                    <p>Engage with a worldwide community of inquisitive and imaginative individuals.</p> 
+                                </li>
+                                <li class="pb-3 d-flex gap-3">
+                                    <i class="bi bi-check-circle-fill text-danger fs-5"></i>
+                                    <p>Learn a skill of your choice from the experts around the world from various industries</p> 
+                                </li>
+                                <li class="pb-3 d-flex gap-3">
+                                    <i class="bi bi-check-circle-fill text-danger fs-5"></i>
+                                    <p>Learn a skill of your choice from the experts around the world from various industries</p> 
+                                </li>
+                            </ul>
+                            <div class="btn btn-success py-3 px-5 rounded-5 text-uppercase fw-bold">
+                                Learn more
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories py-5">
+            <div class="container ">
+                <div class="title d-flex justify-content-between pb-5">
+                    <div class="text">
+                        <p class=" text-danger">Pick your niche and get started</p>
+                        <h1>Popular Categories</h1>
+                    </div>
+                    <div class="coursesBtn">
+                        <button class="btn btn-success text-uppercase rounded-5 fw-bold py-3 px-5">
+                            view all categories
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="category" >
+                    <div class="row pt-3 justify-content-center gap-3">
+                        <div class="col-sm-12 col-lg-3 py-3 greenCourse d-flex align-items-center" style="max-width: 420px;">
+                            <i class="bi bi-pencil-square fs-1 px-4 text-success"></i>
+                            <div class="text pt-3" style="line-height: 0.8;">
+                                <p class="fw-bold text-uppercase">Graphic Design</p>
+                                <p>39 courses</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3 py-3 grayCourse d-flex gap-4 align-items-center mx-0" style="max-width: 420px;">
+                            <i class="bi bi-camera-fill fs-1 ps-4 text-secondary"></i>
+                            <div class="text pt-3" style="line-height: 0.8;">
+                                <p class="fw-bold text-uppercase">Graphic Design</p>
+                                <p>39 courses</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3 py-3 yellowCourse d-flex gap-4 align-items-center mx-0" style="max-width: 420px;">
+                            <i class="bi bi-volume-up-fill fs-1 ps-4 text-warning"></i>
+                            <div class="text pt-3" style="line-height: 0.8;">
+                                <p class="fw-bold text-uppercase">seo & marketing</p>
+                                <p>24 courses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-3 justify-content-center gap-3">
+                        <div class="col-sm-12 col-lg-3 py-3 yellowCourse d-flex align-items-center" style="max-width: 420px;">
+                            <i class="bi bi-pencil-square fs-1 px-4 text-warning"></i>
+                            <div class="text pt-3" style="line-height: 0.8;">
+                                <p class="fw-bold text-uppercase">Graphic Design</p>
+                                <p>39 courses</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3 py-3 redCourse d-flex gap-4 align-items-center mx-0" style="max-width: 420px;">
+                            <i class="bi bi-camera-fill fs-1 ps-4 text-danger"></i>
+                            <div class="text pt-3" style="line-height: 0.8;">
+                                <p class="fw-bold text-uppercase">Graphic Design</p>
+                                <p>39 courses</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3 py-3 greenCourse d-flex gap-4 align-items-center mx-0" style="max-width: 420px;">
+                            <i class="bi bi-volume-up-fill fs-1 ps-4 text-success"></i>
+                            <div class="text pt-3" style="line-height: 0.8;">
+                                <p class="fw-bold text-uppercase">seo & marketing</p>
+                                <p>24 courses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-3 justify-content-center gap-3">
+                        <div class="col-sm-12 col-lg-3 py-3 redCourse d-flex align-items-center" style="max-width: 420px;">
+                            <i class="bi bi-pencil-square fs-1 px-4 text-danger"></i>
+                            <div class="text pt-3" style="line-height: 0.8;">
+                                <p class="fw-bold text-uppercase">Graphic Design</p>
+                                <p>39 courses</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3 py-3 yellowCourse d-flex gap-4 align-items-center mx-0" style="max-width: 420px;">
+                            <i class="bi bi-camera-fill fs-1 ps-4 text-warning"></i>
+                            <div class="text pt-3" style="line-height: 0.8;">
+                                <p class="fw-bold text-uppercase">Graphic Design</p>
+                                <p>39 courses</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3 py-3 grayCourse d-flex gap-4 align-items-center mx-0" style="max-width: 420px;">
+                            <i class="bi bi-volume-up-fill fs-1 ps-4 text-secondary"></i>
+                            <div class="text pt-3" style="line-height: 0.8;">
+                                <p class="fw-bold text-uppercase">seo & marketing</p>
+                                <p>24 courses</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                 
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="explore py-5 mt-5" style="margin-bottom: 150px;">
+            <div class="container">
+                <div class="sectionHead text-center">
+                <p class="text-danger">
+                    Some of our most popular online courses
+                </p>
+                <h1>
+                    Explore Inspiring Online Courses
+                </h1>
+            </div>
+            <div class="courses position-relative">
+                <div class="row ">
+                    <div class="col-lg-3 py-3 col-md-4 col-sm-6  " >
+                        <div class="courseCard shadow rounded-4 p-3 position-relative">
+                            <span class=" text-bg-danger text-white px-2 rounded-3 position-absolute" style="top: 20px; left: 20px;">New</span>
+                        <img src="images/item1.jpg" class="rounded-3" width="100%" alt="">
+                        <div class="text">
+                            <div class="info d-flex justify-content-between text-secondary fw-bold">
+                            <p class=" text-uppercase">Digital Marketing</p>
+                            <p>1H 50M</p>
+                        </div>
+                        <h4>
+                            <a href="" class="text-decoration-none text-dark">Mastering The Art Of Digital Communication</a>
+                        </h4>
+                        <span class="fw-bold text-secondary">By: James Willam</span>
+                        <span class=" ps-1 text-success"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 py-3 col-md-4 col-sm-6  " >
+                        <div class="courseCard shadow rounded-4 p-3 position-relative">
+                            <span class=" text-bg-danger text-white px-2 rounded-3 position-absolute" style="top: 20px; left: 20px;">New</span>
+                        <img src="images/item2.jpg" class="rounded-3" width="100%" alt="">
+                        <div class="text">
+                            <div class="info d-flex justify-content-between text-secondary fw-bold">
+                            <p class=" text-uppercase">Digital Marketing</p>
+                            <p>1H 50M</p>
+                        </div>
+                        <h4>
+                            <a href="" class="text-decoration-none text-dark">Mastering The Art Of Digital Communication</a>
+                        </h4>
+                        <span class="fw-bold text-secondary">By: James Willam</span>
+                        <span class=" ps-1 text-success"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 py-3 col-md-4 col-sm-6  " >
+                        <div class="courseCard shadow rounded-4 p-3 position-relative">
+                        <img src="images/item3.jpg" class="rounded-3" width="100%" alt="">
+                        <div class="text">
+                            <div class="info d-flex justify-content-between text-secondary fw-bold">
+                            <p class=" text-uppercase">Digital Marketing</p>
+                            <p>1H 50M</p>
+                        </div>
+                        <h4>
+                            <a href="" class="text-decoration-none text-dark">Mastering The Art Of Digital Communication</a>
+                        </h4>
+                        <span class="fw-bold text-secondary">By: James Willam</span>
+                        <span class=" ps-1 text-success"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 py-3 col-md-4 col-sm-6  " >
+                        <div class="courseCard shadow rounded-4 p-3 position-relative">
+                            <span class=" text-bg-danger text-white px-2 rounded-3 position-absolute" style="top: 20px; left: 20px;">Sale</span>
+                        <img src="images/item4.jpg" class="rounded-3" width="100%" alt="">
+                        <div class="text">
+                            <div class="info d-flex justify-content-between text-secondary fw-bold">
+                            <p class=" text-uppercase">Digital Marketing</p>
+                            <p>1H 50M</p>
+                        </div>
+                        <h4>
+                            <a href="" class="text-decoration-none text-dark">Mastering The Art Of Digital Communication</a>
+                        </h4>
+                        <span class="fw-bold text-secondary">By: James Willam</span>
+                        <span class=" ps-1 text-success"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 py-3 col-md-4 col-sm-6  " >
+                        <div class="courseCard shadow rounded-4 p-3 position-relative">
+                        <img src="images/item5.jpg" class="rounded-3" width="100%" alt="">
+                        <div class="text">
+                            <div class="info d-flex justify-content-between text-secondary fw-bold">
+                            <p class=" text-uppercase">Digital Marketing</p>
+                            <p>1H 50M</p>
+                        </div>
+                        <h4>
+                            <a href="" class="text-decoration-none text-dark">Mastering The Art Of Digital Communication</a>
+                        </h4>
+                        <span class="fw-bold text-secondary">By: James Willam</span>
+                        <span class=" ps-1 text-success"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 py-3 col-md-4 col-sm-6  " >
+                        <div class="courseCard shadow rounded-4 p-3 position-relative">
+                            <span class=" text-bg-danger text-white px-2 rounded-3 position-absolute" style="top: 20px; left: 20px;">New</span>
+                        <img src="images/item6.jpg" class="rounded-3" width="100%" alt="">
+                        <div class="text">
+                            <div class="info d-flex justify-content-between text-secondary fw-bold">
+                            <p class=" text-uppercase">Digital Marketing</p>
+                            <p>1H 50M</p>
+                        </div>
+                        <h4>
+                            <a href="" class="text-decoration-none text-dark">Mastering The Art Of Digital Communication</a>
+                        </h4>
+                        <span class="fw-bold text-secondary">By: James Willam</span>
+                        <span class=" ps-1 text-success"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 py-3 col-md-4 col-sm-6  " >
+                        <div class="courseCard shadow rounded-4 p-3 position-relative">
+                        <img src="images/item7.jpg" class="rounded-3" width="100%" alt="">
+                        <div class="text">
+                            <div class="info d-flex justify-content-between text-secondary fw-bold">
+                            <p class=" text-uppercase">Digital Marketing</p>
+                            <p>1H 50M</p>
+                        </div>
+                        <h4>
+                            <a href="" class="text-decoration-none text-dark">Mastering The Art Of Digital Communication</a>
+                        </h4>
+                        <span class="fw-bold text-secondary">By: James Willam</span>
+                        <span class=" ps-1 text-success"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6  " >
+                        <div class="courseCard shadow rounded-4 p-3 position-relative">
+                            <span class=" text-bg-danger text-white px-2 rounded-3 position-absolute" style="top: 20px; left: 20px;">Sale</span>
+                        <img src="images/item8.jpg" class="rounded-3" width="100%" alt="">
+                        <div class="text">
+                            <div class="info d-flex justify-content-between text-secondary fw-bold">
+                            <p class=" text-uppercase">Digital Marketing</p>
+                            <p>1H 50M</p>
+                        </div>
+                        <h4>
+                            <a href="" class="text-decoration-none text-dark">Mastering The Art Of Digital Communication</a>
+                        </h4>
+                        <span class="fw-bold text-secondary">By: James Willam</span>
+                        <span class=" ps-1 text-success"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="btn btn-success py-3 px-5 rounded-5 position-absolute start-50 translate-middle-x mt-4 text-uppercase fw-bold">
+                    View all courses
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <div class="container">
+                <div class="sectionHead text-center py-5">
+                    <p class="text-danger">
+                        Some of our most popular online courses
+                    </p>
+                    <h1>
+                        Reviews
+                    </h1>
+                </div>
+                <div class="review">
+                    <div class="containerr swiper">
+                    <div class="slider-wrapper">
+                        <div class="card-list swiper-wrapper">
+                            <div class="card-item swiper-slide">
+                                <p>
+                                “Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at
+                                ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem
+                                nunc sapien egestas at cursus. ”
+                                </p>
+                            <div class="avatar d-flex">
+                                <img src="images/reviwer1.jpg" class="rounded-5" alt="">
+                                <div class="text d-flex flex-column ms-3 pt-2" style="line-height: 0.8;">
+                                    <p class=" fw-bold fs-5">Recco Gracia</p>
+                                <p>Web Developer</p>
+                                </div>
+                                
+                            </div>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <p>
+                                “Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at
+                                ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem
+                                nunc sapien egestas at cursus. ”
+                                </p>
+                            <div class="avatar d-flex">
+                                <img src="images/reviwer2.jpg" class="rounded-5" alt="">
+                                <div class="text d-flex flex-column ms-3 pt-2" style="line-height: 0.8;">
+                                    <p class=" fw-bold fs-5">Recco Gracia</p>
+                                <p>Web Developer</p>
+                                </div>
+                                
+                            </div>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <p>
+                                “Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at
+                                ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem
+                                nunc sapien egestas at cursus. ”
+                                </p>
+                            <div class="avatar d-flex">
+                                <img src="images/reviwer3.jpg" class="rounded-5" alt="">
+                                <div class="text d-flex flex-column ms-3 pt-2" style="line-height: 0.8;">
+                                    <p class=" fw-bold fs-5">Recco Gracia</p>
+                                <p>Web Developer</p>
+                                </div>
+                                
+                            </div>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <p>
+                                “Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at
+                                ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem
+                                nunc sapien egestas at cursus. ”
+                                </p>
+                            <div class="avatar d-flex">
+                                <img src="images/reviwer1.jpg" class="rounded-5" alt="">
+                                <div class="text d-flex flex-column ms-3 pt-2" style="line-height: 0.8;">
+                                    <p class=" fw-bold fs-5">Recco Gracia</p>
+                                <p>Web Developer</p>
+                                </div>
+                                
+                            </div>
+                            </div>
+                            <div class="card-item swiper-slide">
+                                <p>
+                                “Condimentum vel viverra morbi quisque lobortis eu leo. A nulla pulvinar at
+                                ut in sit libero, sed. Quis congue pretium in enim gravida quam netus in lorem. Nulla at nibh lorem
+                                nunc sapien egestas at cursus. ”
+                                </p>
+                            <div class="avatar d-flex">
+                                <img src="images/reviwer2.jpg" class="rounded-5" alt="">
+                                <div class="text d-flex flex-column ms-3 pt-2" style="line-height: 0.8;">
+                                    <p class=" fw-bold fs-5">Recco Gracia</p>
+                                <p>Web Developer</p>
+                                </div>
+                                
+                            </div>
+                            </div>
+                            
+                            
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        <div class="teachers my-5">
+            <div class="container">
+                <div class="sectionHead text-center py-5">
+                    <p class="text-danger">
+                        Meet our popular teachers
+                    </p>
+                    <h1>
+                        Our Teachers
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col text-center teacherCard">
+                        <div class="teacherImage position-relative rounded-3" style="width: fit-content; margin: auto;">
+                            <img src="images/teacher1.jpg" alt="" style="width: 200px;">
+                            <div class="social position-absolute" style="top: 0;">
+                                <ul>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-facebook"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-twitter"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-instagram"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-linkedin"></i></li>
+                                </ul>
+                        </div>
+                        </div>
+
+                            
+                            
+                        <div class="text pt-3" style="line-height: 0.8;">
+                            <p class="fw-bold">Anila Lee</p>
+                            <p class="text-danger">Art Director</p>
+                        </div>
+                    </div>
+                    <div class="col text-center teacherCard">
+                        <div class="teacherImage position-relative rounded-3" style="width: fit-content; margin: auto;">
+                            <img src="images/teacher2.jpg" alt="" style="width: 200px;">
+                            <div class="social position-absolute" style="top: 0;">
+                                <ul>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-facebook"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-twitter"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-instagram"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-linkedin"></i></li>
+                                </ul>
+                        </div>
+                        </div>
+
+                            
+                            
+                        <div class="text pt-3" style="line-height: 0.8;">
+                            <p class="fw-bold">Bruce Smith</p>
+                            <p class="text-danger">Marketing Expert</p>
+                        </div>
+                    </div>
+                    <div class="col text-center teacherCard">
+                        <div class="teacherImage position-relative rounded-3" style="width: fit-content; margin: auto;">
+                            <img src="images/teacher3.jpg" alt="" style="width: 200px;">
+                            <div class="social position-absolute" style="top: 0;">
+                                <ul>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-facebook"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-twitter"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-instagram"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-linkedin"></i></li>
+                                </ul>
+                        </div>
+                        </div>
+
+                            
+                            
+                        <div class="text pt-3" style="line-height: 0.8;">
+                            <p class="fw-bold">Jack Nicholson</p>
+                            <p class="text-danger">SEO Expert</p>
+                        </div>
+                    </div>
+                    <div class="col text-center teacherCard">
+                        <div class="teacherImage position-relative rounded-3" style="width: fit-content; margin: auto;">
+                            <img src="images/teacher4.jpg" alt="" style="width: 200px;">
+                            <div class="social position-absolute" style="top: 0;">
+                                <ul>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-facebook"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-twitter"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-instagram"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-linkedin"></i></li>
+                                </ul>
+                        </div>
+                        </div>
+                        <div class="text pt-3" style="line-height: 0.8;">
+                            <p class="fw-bold">Calvin Ian</p>
+                            <p class="text-danger">Sales Director</p>
+                        </div>
+                    </div>
+                    <div class="col text-center teacherCard">
+                        <div class="teacherImage position-relative rounded-3" style="width: fit-content; margin: auto;">
+                            <img src="images/teacher5.jpg" alt=""  style="width: 200px;">
+                            <div class="social position-absolute" style="top: 0;">
+                                <ul>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-facebook"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-twitter"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-instagram"></i></li>
+                                    <li class="bg-success text-white p-2 my-1" style="width: fit-content;"><i class="bi bi-linkedin"></i></li>
+                                </ul>
+                        </div>
+                        </div>
+
+                            
+                            
+                        <div class="text pt-3" style="line-height: 0.8;">
+                            <p class="fw-bold">Milye Sam</p>
+                            <p class="text-danger">Marketing Expert</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="container py-5">
+                <div class="sectionHead text-center py-5">
+                    <p class="text-danger">
+                        What features we provide
+                    </p>
+                    <h1>
+                        Core Features
+                    </h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 col-md-6">
+                        <ul>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Engage with a worldwide community of inquisitive and imaginative
+                                    <br> individuals.</p>
+                            </li>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Engage with a worldwide community of inquisitive and imaginative
+                                    <br> individuals.</p>
+                            </li>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Engage with a worldwide community of inquisitive and imaginative
+                                    <br> individuals.</p>
+                            </li>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Learn a skill of your choice from the experts around the world from various <br> industries</p>
+                            </li>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Learn a skill of your choice from the experts around the world from various <br> industriesp>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-6">
+                        <ul>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Engage with a worldwide community of inquisitive and imaginative
+                                    <br> individuals.</p>
+                            </li>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Engage with a worldwide community of inquisitive and imaginative
+                                    <br> individuals.</p>
+                            </li>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Engage with a worldwide community of inquisitive and imaginative
+                                    <br> individuals.</p>
+                            </li>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Learn a skill of your choice from the experts around the world from various <br> industries</p>
+                            </li>
+                            <li class="d-flex">
+                                <i class="bi bi-check-circle-fill text-danger fs-4 me-2"></i>
+                                <p class="pt-1">Learn a skill of your choice from the experts around the world from various <br> industriesp>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="subscribe  mb-5 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h1>Subscribe and get 20% OFF on your first online course</h1>
+                        <p class="text-danger">Sign Up for our newsletter and never miss any offers</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                        <input type="text" class="text-center border-0 rounded-5 mb-4" style="padding: 1rem 7rem" placeholder="Write Your Email Address*">
+                        <button class="btn btn-success text-uppercase rounded-5" style="padding:  1rem 8rem; text-wrap: nowrap;">get started now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mb-5">
+            <div class="container d-flex justify-content-between">
+                <div class="logoAndSocials">
+                    <img src="images/logo.png" alt="">
+                    <ul class=" d-flex gap-4 pt-3">
+                        <li class="text-secondary fs-4"><i class="bi bi-facebook"></i></li>
+                        <li class="text-secondary fs-4"><i class="bi bi-twitter"></i></li>
+                        <li class="text-secondary fs-4"><i class="bi bi-instagram"></i></li>
+                        <li class="text-secondary fs-4"><i class="bi bi-linkedin"></i></li>
+                        <li class="text-secondary fs-4"><i class="bi bi-youtube"></i></li>
+                    </ul>
+                </div>
+                <div class="row gap-5 ps-2">
+                    <div class="col">
+                        <h5 class="text-nowrap">Quick Links
+                        </h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                          </ul>
+                    </div>
+                    <div class="col">
+                        <h5>
+                            About
+                        </h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How it works</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Promotion</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Affilation</a></li>
+                          </ul>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-nowrap">Help Center
+                        </h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Payments</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Checkout</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Other</a></li>
+                          </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="nav flex-column">
+                            <h5>Contact Us</h5>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">contact@YourComapany</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">+01234567910</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">New York, USA</a></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <hr>
+
+        <div class="secondFooter d-flex justify-content-between px-5">
+            <p>© 2024 TemplatesJungle. All rights reserved.</p>
+            <p>Free HTML Template by: <a href="" class="fw-bold text-black text-decoration-none">TemplatesJungle</a> Distributed by : <a href="" class="fw-bold text-black text-decoration-none">ThemeWagon</a> </p>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
